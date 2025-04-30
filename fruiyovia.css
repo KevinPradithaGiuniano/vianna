@@ -1,12 +1,12 @@
-body {
+body{
     margin: 0px;
 }
 
-
-header {
+header{
     font-family: Arial, Helvetica, sans-serif, bold; 
     display: flex;
     top: 0;
+    height: auto;
     width: 100%;
     background-color: #8E7DBE;
     justify-content: space-between;
@@ -15,16 +15,82 @@ header {
     color: #F4F8D3;
     padding: 10px;
     text-align: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+header div{
+    margin-right: auto;
+}
+
+header div img{
+    height: 70px;
+    width: auto;
     
 }
-nav a {
+
+.brand{
+    float: left;
+    color: #F4F8D3;
+    font-family: Arial, Helvetica, sans-serif,bold;
+}
+
+nav a{
     padding: 10px 25px;
     text-decoration: none;
     color: #F4F8D3;
     text-align: center;
+    align-items: center;
+    font-size: 18px;
+    transition: baground-color 0.3s;
+    font-weight: bolder;
 }
 
-section.home {
+nav a:hover{
+    background-color: #A888B5;
+    border-radius: 5px;
+
+}
+
+nav a i{
+    margin-left: auto;
+    color:cadetblue;
+    
+}
+
+nav a :first-child{
+    background-color: #F4F8D3;
+    border-radius: 5px;
+}
+
+
+section.home{
     height: 600px;
-    background:
+    background: url(https://i.pinimg.com/736x/b1/ae/18/b1ae183f60cac6e1fee7f51df88bbce3.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+section.home div{
+    text-align: center;
+    color: #F4F8;
+    margin-top: auto;
+    width: 70%;
+    padding: 20px;
+}
+
+section.home .welcome{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif,bold;
+}
+section.home a{
+    color: #F4F8D3;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif,bold;
+    font-size: 30px;
 }
