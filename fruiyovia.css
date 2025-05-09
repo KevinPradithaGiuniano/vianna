@@ -108,7 +108,9 @@ section.home a{
 }
 
 .about {
-    background: #8b6c5c;
+    background:#333;
+    height: 600px;
+    padding-top: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,8 +140,9 @@ section.home a{
 }
 
 .product-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+
     gap: 20px;
     width: 80%;
     margin:  auto;
@@ -149,7 +152,6 @@ section.home a{
 .card {
     width: 100%;
     max-width: 250px;
-    height: 370px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -189,13 +191,13 @@ section.home a{
 
 
 .card .harga {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
     color: #333;
     margin-bottom: 12px;
 }
 
-.card button {
+.card a{
     background-color: #c9a3436b;
     color: white;
     border: none;
@@ -224,18 +226,6 @@ section.home a{
 .contact-info p {
     margin-bottom: 10px;
     font-size: 18px;
-}
-
-.inini {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ensures the container takes full viewport height */
-}
-
-.inini img {
-    max-width: 100%; /* Ensures the image scales properly */
-    height: auto;    /* Maintains aspect ratio */
 }
 
 footer {
