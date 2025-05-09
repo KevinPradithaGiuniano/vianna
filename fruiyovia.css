@@ -47,7 +47,7 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #A888B5;
+    background-color: #53335f;
     border-radius: 5px;
 
 }
@@ -66,16 +66,25 @@ nav a :first-child{
 
 section.home{
     height: 600px;
-    background: url(https://i.pinimg.com/736x/b1/ae/18/b1ae183f60cac6e1fee7f51df88bbce3.jpg);
+    background: url("baground.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
     padding-top: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+section.about{
+    background-color: #8E7DBE;
+    height: 600px;
 }
 
 section.home div{
     text-align: center;
-    color: #F4F8;
+    text-align: center;
+    align-items: center;
+    color: #000;
     margin-top: auto;
     width: 70%;
     padding: 20px;
@@ -85,8 +94,11 @@ section.home .welcome{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif,bold;
 }
+
 section.home a{
-    color: #F4F8D3;
+    color: #0000;
+    text-align: center;
+    align-items: center;
     padding: 10px 20px;
     text-decoration: none;
     box-shadow: 0px 0px 3px;
@@ -94,3 +106,157 @@ section.home a{
     font-family: Arial, Helvetica, sans-serif,bold;
     font-size: 30px;
 }
+
+.about {
+    background: #8b6c5c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.about div h2{
+    color: #000;
+}
+.about div p {
+    max-width: 600px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.product {
+    background-image:"download.jpg";
+    padding-top: 120px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin:  auto;
+    padding: 0 50px;
+}
+
+.card {
+    width: 100%;
+    max-width: 250px;
+    height: 370px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card .gambar img {
+    width: 100%;
+    max-width: 130px;
+    border-radius: 8%;
+    margin-bottom: 10px;
+}
+
+.card .nama {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.card .deskripsi {
+    font-size: 0.9em;
+    color: #666;
+    min-height: 30px;
+    margin-bottom: 8px;
+}
+
+
+.card .harga {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.card button {
+    background-color: #c9a3436b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+.contact {
+    background: #f4f4f4;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.inini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the container takes full viewport height */
+}
+
+.inini img {
+    max-width: 100%; /* Ensures the image scales properly */
+    height: auto;    /* Maintains aspect ratio */
+}
+
+footer {
+    background: #53335f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+color:#8E7DBE 
+}
+
